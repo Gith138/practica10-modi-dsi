@@ -33,7 +33,7 @@ net.createServer((socket) => {
       });
     });
 
-    socket.on('end', () => {
+    socket.on('close', () => {
       console.log('Cliente desconectado');
     });
   }).listen(60300, () => {
